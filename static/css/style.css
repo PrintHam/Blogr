@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+
+:root{
+    /*Fonts*/
+    --font-size: 16px;
+    --overpass: 'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+
+    /*Colors*/
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red: hsl(355, 100%, 74%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --grayish-blue: hsl(240, 2%, 79%);
+    --very-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+
+    /*Gradients*/
+    --graident-nav-1: hsl(13, 100%, 72%);
+    --graident-nav-2: hsl(353, 100%, 62%);
+
+    --graident-background-1: hsl(237, 17%, 21%);
+    --graident-background-2:hsl(237, 23%, 32%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+#header{
+    width: 100%;
+    min-width: 900px;
+    min-height: 600px;
+    border-bottom-left-radius: 10%;
+    background-image: linear-gradient(to right, var(--graident-nav-1), var(--graident-nav-2));
+}
+/*Nav*/
+#nav{
+    width: 100%;
+    min-width: 900px;
+    min-height: 300px;
+    color: var(--white);
+    font-family: var(--ubuntu);
+    font-size: var(--font-size);
+}
+.nav__flex_container{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav__list-item{
+    margin-left: 20px;
+}
+.nav__list .logo{
+    margin-right: 40px;
+}
+.nav__list-item a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav__btns{
+    display: flex;
+    align-items: center;
+}
+.nav__btn{
+    font-size: var(--font-size);
+    width: 125px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 25px;
+}
+.nav__btns .login-btn{
+    color: var(--white);
+    background-color: transparent;
+}
+.nav__btns .sign-up-btn{
+    color: var(--very-light-red);
+    background-color: var(--white);
+}
+/*Nav Selectors*/
+.nav__btn:hover{
+    background: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+.nav__list-item:hover{
+    opacity: 0.5;
+}
+/*Header Content*/
+#header-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header-content h1{
+    color: var(--white);
+    font-size: 55px;
+    font-family: var(--overpass);
+}
+#header-content p{
+    color: var(--white);
+    font-size: var(--font-size);
+    font-family: var(--ubuntu);
+    font-weight: lighter;
+}
+.header-content__links{
+    padding-top: 50px;
+    display: flex;
+    list-style-type: none;
+}
+.header__item{
+    margin-right: 20px;
+    width: 125px;
+    height: 40px;
+}
+.header__link{
+    text-decoration: none;
+}
+.start-item{
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+}
+.start-item a{
+    font-family: var(--ubuntu);
+    color: var(--light-red);
+}
+.learn-more-item{
+    border: 1px var(--white) solid;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+}
+.learn-more-item a{
+    font-family: var(--ubuntu);
+    color: white;
+}
+/*Header Content Selectors*/
+.start-item:hover, .learn-more-item:hover{
+    opacity: 0.5;
+}
+/*Features*/
+#features{
+    background-color: var(--white);
+    width: 100%;
+    min-width: 900px;
+    height: 900px;
+}
+#features h1{
+    font-family: var(--ubuntu);
+    color: var(--very-dark-blue);
+}
+#features p{
+    line-height: 1.8;
+    font-family: var(--overpass);
+}
+.features__main-header{
+    padding-top: 3%;
+    text-align: center;
+    font-size: 33px;
+}
+.features__flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.features__descriptions{
+    padding-top: 5%;
+}
+.features__text{
+    padding-bottom: 5%;
+    max-width: 700px;
+}
+.features__text h1{
+    padding-bottom: 5%;
+}
+/*Advantages*/
+#advantages{
+    width: 100%;
+    min-width: 900px;
+    height: 400px;
+    background-color: var(--very-dark-black-blue);
+    color: var(--white);
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+.advantages__flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.advantages__content{
+    padding-top: 2%;
+}
+.advantages__content h1{
+    padding-bottom: 5%;
+    font-family: var(--overpass);
+    font-size: 33px;
+}
+.advantages__content p{
+    line-height: 1.8;
+    font-family: var(--ubuntu);
+    max-width: 700px;
+}
+/*Description*/
+#description{
+    width: 100%;
+    min-width: 900px;
+    min-height: 600px;
+    background-color: var(--white);
+}
+.description__flex-container{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.description__text h1{
+    padding-bottom: 5%;
+    font-family: var(--overpass);
+    font-size: 33px;
+    color: var(--very-dark-black-blue);
+}
+.description__text p{
+    font-family: var(--ubuntu);
+    padding-bottom: 5%;
+    max-width: 700px;
+    line-height: 1.8;
+}
+/*Footer*/
+#footer{
+    min-width: 900px;
+    min-height: 400px;
+    border-top-right-radius: 75px;
+    background-color: var(--very-dark-black-blue);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__list, .footer__logo{
+    padding-top: 5%;
+}
+.item-category{
+    color: var(--white);
+    font-family: var(--overpass);
+}
+.footer__list{
+    list-style-type: none;
+}
+.footer__list-item{
+    padding-top: 10px;
+}
+.footer__link_item{
+    color: var(--grayish-blue);
+    font-family: var(--ubuntu);
+    text-decoration: none;
+}
+@media only screen and (max-width: 1500px){
+    #features{
+        height: 1200px;
+    }
+    .features__flex-container{
+        flex-direction: column;
+    }
+    .features__descriptions, .features__image-container{
+        margin: 0 auto;
+    }
+    .features__image-container img{
+        height: 600px;
+    }
+    #description{
+        height: 1600px;
+    }
+    .description__flex-container{
+        flex-direction: column;
+    }
+    .description__text_container, .description__image-container{
+        margin: 0 auto;
+    }
+    .description__image-container{
+        margin-top: 10%;
+    }
+}
