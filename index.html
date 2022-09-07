@@ -11,12 +11,36 @@
         <!--Nav-->
         <nav class="nav" id="nav">
             <div class="nav__flex_container">
-                <ul class="nav__list">
-                    <li class="nav__list-item logo"><a href=""><img class="nav__logo" src="images/logo.svg"></a></li>
-                    <li class="nav__list-item"><a href="">Product<img src="images/icon-arrow-light.svg"></a></li>
-                    <li class="nav__list-item"><a href="">Company <img src="images/icon-arrow-light.svg"></a></li>
-                    <li class="nav__list-item"><a href="">Connect <img src="images/icon-arrow-light.svg"></a></li>
-                </ul>
+                <div class="nav__dropdown">
+                    <a href="" class="nav__logo-link"><img class="nav__logo" src="images/logo.svg"></a>
+                    <div class="nav__dropdown-section">
+                        <button class="nav__dropdown-btn">Product<img src="images/icon-arrow-light.svg"></button>
+                        <div class="nav__dropdown-content">
+                            <a href="" class="nav__dropdown-link">Overview</a>
+                            <a href="" class="nav__dropdown-link">Pricing</a>
+                            <a href="" class="nav__dropdown-link">Marketplace</a>
+                            <a href="" class="nav__dropdown-link">Features</a>
+                            <a href="" class="nav__dropdown-link">Integrations</a>
+                        </div>
+                    </div>
+                    <div class="nav__dropdown-section">
+                        <button class="nav__dropdown-btn">Company<img src="images/icon-arrow-light.svg"></button>
+                        <div class="nav__dropdown-content">
+                            <a href="" class="nav__dropdown-link">About</a>
+                            <a href="" class="nav__dropdown-link">Team</a>
+                            <a href="" class="nav__dropdown-link">Blog</a>
+                            <a href="" class="nav__dropdown-link">Careers</a>
+                        </div>
+                    </div>
+                    <div class="nav__dropdown-section">
+                        <button class="nav__dropdown-btn">Connect<img src="images/icon-arrow-light.svg"></button>
+                        <div class="nav__dropdown-content">
+                            <a href="" class="nav__dropdown-link">Contact</a>
+                            <a href="" class="nav__dropdown-link">Newsletter</a>
+                            <a href="" class="nav__dropdown-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="nav__btns">
                     <button class="nav__btn login-btn">Login</button>
                     <button class="nav__btn sign-up-btn">Sign Up</button>
