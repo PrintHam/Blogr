@@ -1,2 +1,2 @@
 # Blogr
-Front-End Web Challenge
+A front-end challenge to practice CSS design more. 
